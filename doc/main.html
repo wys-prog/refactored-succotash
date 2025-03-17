@@ -3,10 +3,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wyland - documentation</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  
-  
+  <header>
+    <h1>wyland - Documentation</h1>
+  </header>
 
+  <main>
+    <section>
+      <h2>Arguments</h2>
+      <ul>
+        <li><strong>--v, --version:</strong> Prints the version</li>
+        <li><strong>--n, --name:</strong> Prints the name</li>
+        <li><strong>--b, --build:</strong> Prints the build name</li>
+        <li><strong>--target:</strong> Prints the current target</li>
+        <li><strong>--target-info:</strong> Prints information about targets</li>
+        <li><strong>--check:</strong> Finds all files in .disk in ./ and ../</li>
+        <li><strong>-target &lt;x&gt;:</strong> Sets the target to x</li>
+        <li><strong>-run &lt;file&gt;:</strong> Runs &lt;file&gt;</li>
+        <li><strong>-parse &lt;file&gt;:</strong> Parses the &lt;file&gt;</li>
+        <li><strong>-debug &lt;file&gt;:</strong> Debugs a &lt;file&gt;</li>
+        <li><strong>-new-env &lt;name&gt;:</strong> Creates a new environment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Future Arguments</h2>
+      <ul>
+        <li><strong>-compile &lt;file&gt;:</strong> Compiles the &lt;file&gt;</li>
+        <li><strong>-libsof &lt;file&gt;:</strong> Returns libs in &lt;file&gt;</li>
+        <li><strong>-api &lt;lib&gt;:</strong> Tries to load &lt;lib&gt; as library</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Targets</h2>
+      <ul>
+        <li><strong>wtarg64:</strong> Basic Target</li>
+        <li><strong>wtarg32:</strong> Basic Target in 32 bits mode</li>
+        <li><strong>wtargmarch:</strong> Target built for Mathematics Operations, and big floats</li>
+        <li><strong>wtargfast:</strong> NON-STANDARD! The fastest (jumps are limited to: jmp, je)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 wyland</p>
+  </footer>
 </body>
 </html>
