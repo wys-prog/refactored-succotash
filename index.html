@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wyland - A Cross-Platform Virtual Machine</title>
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('announcement.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('announcement-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading announcement:', error));
+    });
+  </script>
 </head>
 <body>
 
@@ -14,15 +25,7 @@
     Wyland uses a custom architecture that remains consistent across all operating systems. 
     This allows binaries to run seamlessly, independent of the underlying OS.</p>
 
-  <div class="announcement">
-    <h2>Working on Linux32 build !</h2>
-    <p>Current architecture: warg64. Working on: warg32, warmarch, wargfast</p>
-  
-  </div>
-
-  <div class="announcement">
-    <h2>Working on stdwy:2 ! Binaries can be unusable.</h2>
-  </div>
+    <div id="announcement-container"></div>
 
   <h2>Features</h2>
   <ul>
